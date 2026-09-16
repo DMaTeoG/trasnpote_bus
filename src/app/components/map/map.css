@@ -1,0 +1,46 @@
+.map {
+  height: 550px;
+  background: #dce8d5;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid white;
+}
+
+.map h2 {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  z-index: 3;
+}
+
+.road {
+  position: absolute;
+  width: 90%;
+  height: 35px;
+  background: #555;
+  color: white;
+  left: 5%;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.road1 {
+  top: 25%;
+}
+
+.road2 {
+  top: 50%;
+}
+
+.road3 {
+  top: 75%;
+}
+
+.bus {
+  position: absolute;
+  font-size: 25px;
+  transition: left 1s linear;
+  z-index: 4;
+}

@@ -1,0 +1,48 @@
+<div class="panel">
+
+  <h2>⚠️ Alertas</h2>
+
+  @if (alertas.length === 0) {
+
+    <p>No hay alertas.</p>
+
+  }
+
+  @for (bus of alertas; track bus.id) {
+
+    <div
+      class="alert"
+      [class.bunching]="bus.intervalo < 2.4"
+      [class.gap]="bus.intervalo > 9.6">
+
+      <strong>
+        @if (bus.intervalo < 2.4) {
+          🟠 Bunching
+        } @else {
+          🔴 Hueco
+        }
+      </strong>
+
+      <p>
+        Bus {{ bus.id }} · Ruta {{ bus.ruta }}
+      </p>
+
+      <small>
+        Intervalo:
+        {{ bus.intervalo | number:'1.1-1' }}
+        min
+      </small>
+
+      @if (bus.intervalo < 2.4) {
+
+        <button>
+          🛑 Retener 3 min
+        </button>
+
+      }
+
+    </div>
+
+  }
+
+</div>

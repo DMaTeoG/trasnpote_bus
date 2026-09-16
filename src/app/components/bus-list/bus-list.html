@@ -1,0 +1,39 @@
+<div class="panel">
+
+  <h2>🚌 Buses en servicio</h2>
+
+  <div class="bus-list">
+
+    @for (bus of buses; track bus.id) {
+
+      <div class="bus-row">
+
+        <div>
+
+          <strong>
+            Bus {{ bus.id }}
+          </strong>
+
+          <small>
+            Ruta {{ bus.ruta }}
+          </small>
+
+        </div>
+
+        <span
+          class="status"
+          [class.normal]="estado(bus) === 'Normal'"
+          [class.warning]="estado(bus) === 'Bunching'"
+          [class.danger]="estado(bus) === 'Hueco'">
+
+          {{ estado(bus) }}
+
+        </span>
+
+      </div>
+
+    }
+
+  </div>
+
+</div>

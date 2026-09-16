@@ -1,0 +1,36 @@
+.panel {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.alert {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.alert p {
+  margin: 5px 0;
+}
+
+.bunching {
+  background: #fff3cd;
+}
+
+.gap {
+  background: #f8d7da;
+}
+
+.alert button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}

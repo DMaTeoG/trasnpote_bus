@@ -1,0 +1,31 @@
+<div class="map">
+
+  <h2>Mapa de la flota</h2>
+
+  <div class="road road1">
+    R07
+  </div>
+
+  <div class="road road2">
+    R03
+  </div>
+
+  <div class="road road3">
+    R12
+  </div>
+
+  @for (bus of buses; track bus.id) {
+
+    <div
+      class="bus"
+      [style.left.%]="bus.posicion > 90 ? 90 : bus.posicion"
+      [style.top]="getTop(bus)"
+      [title]="'Bus ' + bus.id">
+
+      🚌
+
+    </div>
+
+  }
+
+</div>

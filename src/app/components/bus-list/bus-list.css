@@ -1,0 +1,42 @@
+.panel {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.bus-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.bus-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.bus-row small {
+  display: block;
+  color: #777;
+}
+
+.status {
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.status.normal {
+  background: #d1e7dd;
+}
+
+.status.warning {
+  background: #fff3cd;
+}
+
+.status.danger {
+  background: #f8d7da;
+}
